@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Raihan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== SINGLE LOADING SCREEN (Rizq Wijaya Style) ===== -->
+<div id="loadingScreen" class="loading-screen">
+  <div class="loader-content">
+    
+    <!-- Rotating Rings (Background) -->
+    <div class="rings-container">
+      <div class="ring ring-outer"></div>
+      <div class="ring ring-middle"></div>
+      <div class="ring ring-inner">
+        <div class="ring-dot"></div>
+      </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo-wrapper">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <!-- Huruf R Bold Stylized -->
+    <path 
+      d="M25 20 L55 20 C70 20 78 28 78 40 C78 50 72 56 64 58 L78 80 L65 80 L53 60 L40 60 L40 80 L25 80 Z 
+         M40 33 L40 47 L53 47 C60 47 64 44 64 40 C64 36 60 33 53 33 Z" 
+      fill="white" 
+      stroke="white" 
+      stroke-width="1" 
+      stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Text Info -->
+    <h1 class="loader-name">Rayhan Edge.</h1>
+    <p class="loader-subtitle">SISWA SMK · SPORT DESIGNER · IP/PX/PS</p>
+
+    <!-- Progress Bar (Perfectly Centered) -->
+    <div class="progress-wrapper">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-labels">
+        <span id="progressStatus">LOADING...</span>
+        <span id="progressPercent">0%</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <!-- Favicons -->
+  <link href="assets/img/logoku.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <nav class="navbar animate-on-load anim-fade-up delay-1">
+    <a href="#" class="logo">⚡</a>
+    <ul class="nav-links">
+    <a href="#hero" class="nav-link active" data-target="home">Home</a>
+  <a href="#about" class="nav-link" data-target="about">About</a>
+  <a href="#resume" class="nav-link" data-target="resume">Resume</a>
+  <a href="#portfolio" class="nav-link" data-target="portfolio">Portfolio</a>
+  <a href="#services" class="nav-link" data-target="services">Services</a>
+  <a href="#contact" class="nav-link" data-target="contact">Contact</a
+  </nav>
+
+  </header>
+
+  <main class="main">
+
+<!-- Hero Section (Redesigned) -->
+    <section id="hero" class="hero section modern-hero">
+      <!-- Background Image -->
+      <img src="assets/img/sat.jpeg" alt="Background" class="hero-bg-img">
+      
+      <!-- Animated Glow Effect -->
+      <div class="hero-glow-effect"></div>
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+      
+<!-- Glassmorphism Card -->
+            <div class="hero-glass-card">
+              <div class="hero-badge">Welcome</div>
+              <h2 class="hero-title animate-on-load anim-fade-up delay-3">MUHAMMAD RAYHAN PAMUNGKAS</h2>
+              <p class="hero-subtitle animate-on-load anim-fade-up delay-4">I am <span class="typed" data-typed-items="Sport Designer, Scout, Content Creator, Ordinaryman"></span><span class="typed-cursor typed-cursor--blink">|</span></p>
+              <div class="profile-container">
+ <div class="hero-section">
+
+  <div class="profile-wrapper animate-on-load anim-scale-in delay-2">
+    <div class="profile-circle animate-on-load anim-scale-in delay-2">
+      <img src="assets/img/kar.jpeg" alt="Profile">
+    </div>
+  </div>
+</div>
+              <div class="social-links animate-on-load anim-fade-up delay-5">
+                <a href="https://www.behance.net/raihandesign1/" target="_blank" title="Behance"><i class="bi bi-behance"></i></a>
+                <a href="https://www.instagram.com/raihan.design_/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/6285855444927" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+
+              <div class="hero-cta-buttons">
+                <a href="#portfolio" class="btn-glow">See My Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+              </div>
+            </div>
+            <!-- End Glassmorphism Card -->
+            
+          </div>
+          <!-- End col-lg-10 -->
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container -->
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- Modern Stats Section -->
+    <section id="stats-modern" class="stats-modern section">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          
+          <!-- Stat Item 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="bi bi-folder-check"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">40+</h3>
+                <p class="stat-label">Project Completed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Item 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">1+</h3>
+                <p class="stat-label">Year Experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Item 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="bi bi-emoji-smile"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">10+</h3>
+                <p class="stat-label">Happy Clients</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Modern Stats Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Live in a city in East Java</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/wex.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2> Biodata</h2>
+            <p class="fst-italic py-3">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Date Of Birth:</strong> <span>17 Dec 2009</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.smkpgri1giri.sch.id</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone Number:</strong> <span>085 855 444 927</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Banyuwangi,  Jawa Timur</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>16</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>-</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>raihanalie291@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Sport Designer</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-12">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Sport Design</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <!--<div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          <!--  <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Muhammad Rayhan Pamungkas</h4>
+              <p><em></em></p>
+              <ul>
+                <li>Banyuwangi,Jawa Timur</li>
+                <li>085855444927</li>
+                <li>raihanalie77@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+              <h4>SDN 2 Penganjuran </h4>
+              <h5>2016 - 2022</h5>
+             </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>SMPN 1 Banyuwangi </h4>
+              <h5>2022 - 2025</h5>
+             </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>SMKS PGRI 1 Giri Banyuwangi</h4>
+              <h5>2025 - Sekarang</h5>
+            </div><!-- Edn Resume Item -->
+
+
+          
+          
+           
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Matchday Desainer</h4>
+              <h5>2025 - Sekarang</h5>
+              <p><em>Penganjuran, Banyuwangi </em></p>
+              <ul>
+                <li>Memperoleh 12 cilent dari berbagai negara</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  <script src="gallery.js"></script>
+</body>
+</html>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portofolio</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-works">Works</li>
+            <li data-filter=".filter-projects">Projects</li>
+          </ul><!-- End Portfolio Filters -->>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/pers.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Profile</h4>
+                <p>Feb 26</p>
+                <a href="assets/img/masonry-portfolio/pers.jpeg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portofolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-works">
+              <img src="assets/img/masonry-portfolio/32.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Work 1</h4>
+                <p>Client : Paul Wanner</p>
+                <a href="assets/img/masonry-portfolio/32.jpeg" title="Work 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portofolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <img src="assets/img/masonry-portfolio/16.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Unused</h4>
+                <p>Design Inspiration</p>
+                <a href="assets/img/masonry-portfolio/16.jpeg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portofolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <img src="assets/img/masonry-portfolio/afternoon.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Unused</h4>
+                <p>Design Inspiration</p>
+                <a href="assets/img/masonry-portfolio/afternoon.jpeg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portofolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <img src="assets/img/masonry-portfolio/night.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Unused</h4>
+                <p>Design Inspiration</p>
+                <a href="assets/img/masonry-portfolio/night.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portofolio Item -->
+
+    </section><!-- /Portofolio Section -->
+
+ <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+<style>
+  /* Styling dasar untuk kartu servis agar rapi */
+  .simple-service-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    background: #131111505;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .simple-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Base style untuk ikon bingkai rasio */
+  .ratio-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #333; /* Warna netral (hitam/abu) */
+    border-radius: 6px;
+    background-color: #0f0e0e;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 800;
+    color: #fffdfd;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  /* Rasio 9:16 (45px / 80px = 0.5625) */
+  .ratio-9-16 {
+    width: 45px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  /* Rasio 1:1 (70px / 70px = 1.0) */
+  .ratio-1-1 {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  /* Rasio 3:4 (60px / 80px = 0.75) */
+  .ratio-3-4 {
+    width: 60px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .simple-service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #fffdfd;
+  }
+
+  .simple-service-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+</style>
+      
+      <!-- Service Item 1: 9:16 -->
+      <div style="flex: 0 0 100%; max-width: 100%; padding: 0 15px; margin-bottom: 30px;" class="col-md-6">
+        <div class="simple-service-card">
+          <div class="ratio-icon ratio-9-16">9:16</div>
+          <h3>Matchday Poster</h3>
+          <h2>$5</h2>
+        </div>
+      </div>
+
+      <!-- Service Item 2: 1:1 -->
+      <div style="flex: 0 0 100%; max-width: 100%; padding: 0 15px; margin-bottom: 30px;" class="col-md-6">
+        <div class="simple-service-card">
+          <div class="ratio-icon ratio-1-1">1:1</div>
+          <h3>Profile Logo</h3>
+          <h2>$3</h2>
+        </div>
+      </div>
+
+      <!-- Service Item 3: 3:4 -->
+      <div style="flex: 0 0 100%; max-width: 100%; padding: 0 15px; margin-bottom: 30px;" class="col-md-6">
+        <div class="simple-service-card">
+          <div class="ratio-icon ratio-3-4">3:4</div>
+          <h3>Feed Design</h3>
+          <h2>$5</h>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+</div><!-- End Service Item -->
+
+</div>
+
+</div><!-- /Services Section -->
+
+<!-- Tombol Order Now -->
+<div class="order-now-wrapper">
+  <a href="#contact" class="btn-order-now">Order Now</a>
+</div><!-- /sTombol Order Now -->
+
+     <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+         </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Anthony Rouault</h3>
+                      <h4>Rennais (2025)</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/ion.jpeg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>“Literally Good, I love the retouch detail.”</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Paul Wanner</h3>
+                      <h4>PSV (2025)</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/Paul Wanner.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Mulyoasri Kec. Penganjuran, Banyuwangi </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>No HP</h3>
+                <p>085855444927</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>raihanalie291@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Muhammad Rayhan Pamungkas</h3>
+      <p></p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Muhammad Rayhan Pamungkas</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://behance.net/raihandesign1">Me</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
